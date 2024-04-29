@@ -349,3 +349,100 @@ body{
         pointer-events: auto;
     }
 }
+
+.class{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.icolist{
+    margin-right: 60px;
+    margin-top: 40px;
+}
+.icolist img{
+
+    height: 50px;
+    width: 50px;
+    margin-left: 50px;
+}
+
+.about{
+
+    font-size: 45px;
+    text-align: center;
+    
+}
+
+
+.add ol {
+    text-decoration: none;
+    
+}
+
+.list1{
+    list-style: none;
+    margin-top: 34px;
+    margin-left: 25px;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.ff{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.caption{
+    font-size: 30px;
+}
+
+.list2{
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.hr{
+    margin-top: 40px;
+}
+
+.f1{
+    color: #ecf0f4;
+    margin-top: 10px;
+}
+
+.list2 li {
+    position: relative;
+    list-style: none;
+}
+
+.list2 li a{
+    position: relative;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+}
+
+.list2 li a::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    color: var(--clr);
+    overflow: hidden;
+    transition: 1s;
+    border-right:8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+
+}
+
+.list2 li a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 30px var(--clr));
+}
